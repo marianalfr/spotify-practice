@@ -1,0 +1,48 @@
+.hero{
+    height: 60vh;
+    min-height: 568px;
+    margin-top: 80px;
+    padding-bottom: 40px;
+    color: $color-white;
+    background-color: rgb(80, 155, 245);
+    display: flex;
+    align-items: flex-end;
+    
+    @include media($tablet){
+        height: 80vh;
+        min-height: 400px;
+        background-image: url('../images/premium_dancer.png');
+        background-position: right bottom;
+        background-repeat: no-repeat;
+        background-size: 450px;
+    }
+
+    h1{
+        font-size: rem(40);
+        @include media($tablet){
+            font-size: rem(70);
+        }
+    }
+
+    h2{
+        font-weight: $regular;
+
+        @include media($tablet){
+            font-size: rem(32);
+        }
+    }
+
+    p{
+        font-size: rem(10);
+
+        @include media($tablet){
+            font-size: rem(12);
+        }
+    }
+
+    button{
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+
+}
